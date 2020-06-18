@@ -83,7 +83,7 @@ def Reverse(pattern):
     reversedPattern = ''
     for nucleotide in pattern:
         reversedPattern += complementNucleotideMap[nucleotide]
-    return reversedPattern
+    return reversedPattern[::-1]
 
 nucleotidePattern = "ATGGCTATA"
 print ("Reversed nucleotide pattern for %s is %s" % (nucleotidePattern, Reverse(nucleotidePattern)))
